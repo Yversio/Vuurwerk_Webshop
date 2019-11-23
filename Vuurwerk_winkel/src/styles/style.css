@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(https://ak5.picdn.net/shutterstock/videos/1031160125/thumb/7.jpg);
+  background-image: url(https://wallpapercave.com/wp/we5pp7J.jpg);
   -webkit-background-size:cover;
   background-size:cover;
   background-position: center center;
@@ -26,7 +26,7 @@ body {
   width: calc(100% - 60px);
   margin: 0 auto;
   padding: 10px 0;
-  background: #333;
+  background: red;
   z-index: 1;
   text-align: right;
   padding-right: 2%;
@@ -36,11 +36,12 @@ body {
   width: 25%;
   float: left;
   text-transform: uppercase;
+  font-family: sans-serif;
   color: #fff;
   font-size: 25px;
   text-align: left;
   padding-left: 2%;
-  color: green;
+  color: yellow;
 }
 
 .menu-area li {
@@ -57,6 +58,7 @@ body {
   font-size: 14px;
   line-height: 30px;
   position: relative;
+  font-family: sans-serif;
   z-index: 1;
 }
 .menu-area a:hover {
@@ -96,18 +98,18 @@ nav:after {
 
 #wsite-nav-cart-a {
     position: relative;
-    background: url(http://www.clker.com/cliparts/U/D/n/G/6/h/white-shopping-cart-md.png) 2px 8px no-repeat;
+    background: url(https://image.flaticon.com/icons/png/512/60/60992.png) 2px 8px no-repeat;
     background-size: 20px;
     padding-left: 30px;
     position: relative;
 }
 
 .side_navbar_cato {
-  margin-top: 10%;
+  margin-top: 13%;
   margin-left: 40px;
-  background: #333;
   width: 10%;
   height: 20%;
+  border: 6px solid;
 }
 #change_title{
   margin-left: 40px;
@@ -121,26 +123,33 @@ nav:after {
 }
 
 .cato_links {
-  background-color: #AEA7A7;
-  content: '';
+  background-color: red;
   text-transform: uppercase;
-  padding: 0 25px;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 28px;
   text-decoration: none;
+  text-align: left;
   list-style-type: none;
 }
 
 .cato_links li:hover{
-  background: tomato;
+  background: #11FF6B;
   color: #fff;
 }
 
 .cato_namen {
   font-family: monospace;
   font-size: 20px;
-  margin-left: 25px;
   font-weight: 300;
   letter-spacing: 1px;
   display: inline-block;
+  margin-left: 20px;
+  color: yellow;
+}
+
+.main_header {
+  background: yellow;
+  margin-left: 20%;
+  position: absolute;
+  width: 60%;
 }
