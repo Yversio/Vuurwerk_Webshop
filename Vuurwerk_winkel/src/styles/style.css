@@ -1,155 +1,41 @@
 @charset "UTF-8";
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-body {
-  background-image: url(https://wallpapercave.com/wp/we5pp7J.jpg);
-  -webkit-background-size:cover;
-  background-size:cover;
-  background-position: center center;
-  height: 100vh;
-}
-.menu-area li a {
-  text-decoration: none;
+#Informatie {
+  background-color: #000;
+  height: 400px;
 }
 
-.menu-area li {
-  list-style-type: none;
+#Informatie h1{
+  font-size: 50px;
+  color: white;
 }
 
-.main_nav nav{
-  position: relative;
-  width: calc(100% - 60px);
-  margin: 0 auto;
-  padding: 10px 0;
-  background: red;
-  z-index: 1;
-  text-align: right;
-  padding-right: 2%;
+#Services {
+  background-color: orange;
+  height: 400px;
 }
 
-.logo {
-  width: 25%;
-  float: left;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  color: #fff;
-  font-size: 25px;
-  text-align: left;
-  padding-left: 2%;
-  color: yellow;
+#Services h1{
+  font-size: 50px;
+  color: black;
 }
 
-.menu-area li {
-  display: inline-block;
+#Producten {
+  background-color: green;
+  height: 400px;
 }
 
-.menu-area a {
-  color: #fff;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: block;
-  padding: 0 25px;
-  font-size: 14px;
-  line-height: 30px;
-  position: relative;
-  font-family: sans-serif;
-  z-index: 1;
-}
-.menu-area a:hover {
-  background: tomato;
-  color: #fff;
+#Producten h1{
+  font-size: 50px;
+  color: black;
 }
 
-.menu-area a:hover:after {
-  transform: translateY(-50%) rotate(-35deg);
+#Contact {
+  background-color: yellow;
+  height: 400px;
 }
 
-nav:before {
-  position: absolute;
-  content: '';
-  border-top: 10px solid #333;
-  border-right: 10px solid #333;
-  border-left: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  top: 100%;
-  left: 0;
-}
-
-nav:after {
-  position: absolute;
-  content: '';
-  border-top: 10px solid #333;
-  border-left: 10px solid #333;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  top: 100%;
-  right: 0;
-}
-
-.website-shopping-car {
-  position: relative;
-}
-
-#wsite-nav-cart-a {
-    position: relative;
-    background: url(https://image.flaticon.com/icons/png/512/60/60992.png) 2px 8px no-repeat;
-    background-size: 20px;
-    padding-left: 30px;
-    position: relative;
-}
-
-.side_navbar_cato {
-  margin-top: 13%;
-  margin-left: 40px;
-  width: 10%;
-  height: 20%;
-  border: 6px solid;
-}
-#change_title{
-  margin-left: 40px;
-  font-size: 30px;
-}
-
-#side_title {
-  background: black;
-  font-family: sans-serif;
-  color: #fff;
-}
-
-.cato_links {
-  background-color: red;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 28px;
-  text-decoration: none;
-  text-align: left;
-  list-style-type: none;
-}
-
-.cato_links li:hover{
-  background: #11FF6B;
-  color: #fff;
-}
-
-.cato_namen {
-  font-family: monospace;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  display: inline-block;
-  margin-left: 20px;
-  color: yellow;
-}
-
-.main_header {
-  background: yellow;
-  margin-left: 20%;
-  position: absolute;
-  width: 60%;
+#Contact h1{
+  font-size: 50px;
+  color: black;
 }
