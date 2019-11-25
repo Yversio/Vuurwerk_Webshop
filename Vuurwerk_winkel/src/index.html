@@ -7,6 +7,7 @@
     <meta name="Klas" content="1G" />
     <meta name="Description" content="Dit is een vuurwerk webshop." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!--Hier komt de title en icon voor de title-->
     <title>Vuurwerk Webshop | Homepagina</title>
@@ -14,46 +15,66 @@
     <link rel="apple-touch-icon" href="images/photo.jpeg" />
 
     <!--Hier komen al de scripts voor de pagina-->
+    <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 
 </head>
 
 <body>
-  <div class="main_nav">
-    <nav>
-      <div class="logo">Team SkengGang</div>
+  <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="#">Homepagina</a></li>
+              <li><a href="#Informatie">Informatie</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#Producten">Producten</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li class="website-shopping-car">
+                <a href="#" id="winkelwagen">
+                  Cart (<span id="aantal-items">0</span>)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <ul class="menu-area">
-        <li><a href="#">Homepagina</a></li>
-        <li><a href="#">Informatie</a></li>
-        <li><a href="#">Contact</a></li>
-        <li class="website-shopping-car">
-	         <a href="#" id="wsite-nav-cart-a">
-		           Cart (<span id="aantal-items">0</span>)
-	         </a>
-       </li>
-      </ul>
-    </nav>
-  </div>
+    <header class="showcase">
+      <div class="container showcase-inner">
+        <h1>Team SkengGang</h1>
+        <p>Welkom op onze vuurwerk pagina. Het is mogelijk om te scrollen naar beneden of de button hieronder drukken!</p>
+        <a href="#producten" class="btn">Producten</a>
+      </div>
+    </header>
 
-<div>
-  <div class="main_header">
-    <h1>Vuurwerk</h1>
-  </div>
-  <div class="side_navbar_cato">
-    <nav>
-      <div id="side_title"><p id="change_title">Keuzes</p></div>
+    <div id="Informatie">
+      <div>
+        <h1>Test</h1>
+      </div>
+    </div>
 
-      <ul class="cato_links">
-        <li><a href="#"><p class="cato_namen" >Sier</p></a></li>
-        <li><a href="#"><p class="cato_namen">Knal</p></a></li>
-        <li><a href="#"><p class="cato_namen">Kinder</p></a></li>
-        <li><a href="#"><p class="cato_namen">Cat 1</p></a></li>
-        <li><a href="#"><p class="cato_namen">Feest</p></a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
+    <div id="Services">
+      <div>
+        <h1>Test</h1>
+      </div>
+    </div>
 
-  </body>
+    <div id="Producten">
+      <div>
+        <h1>Test</h1>
+      </div>
+    </div>
+
+    <div id="Contact">
+      <div>
+        <h1>Test</h1>
+      </div>
+    </div>
+</body>
 </html>
