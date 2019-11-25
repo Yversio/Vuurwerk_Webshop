@@ -10,22 +10,22 @@
   color: white;
 }
 
-#Services {
-  background-color: orange;
-  height: 400px;
-}
-
-#Services h1{
-  font-size: 50px;
-  color: black;
-}
-
 #Producten {
   background-color: green;
   height: 400px;
 }
 
 #Producten h1{
+  font-size: 50px;
+  color: black;
+}
+
+#Services {
+  background-color: orange;
+  height: 400px;
+}
+
+#Services h1{
   font-size: 50px;
   color: black;
 }
