@@ -1,41 +1,17 @@
 @charset "UTF-8";
 
-#Informatie {
-  background-color: #000;
-  height: 400px;
+footer {
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    font-family: sans-serif;
 }
 
-#Informatie h1{
-  font-size: 50px;
-  color: white;
-}
+#copyright {
+    color: red;
+    font-size: 20px;
+    }
 
-#Producten {
-  background-color: green;
-  height: 400px;
-}
-
-#Producten h1{
-  font-size: 50px;
-  color: black;
-}
-
-#Services {
-  background-color: orange;
-  height: 400px;
-}
-
-#Services h1{
-  font-size: 50px;
-  color: black;
-}
-
-#Contact {
-  background-color: yellow;
-  height: 400px;
-}
-
-#Contact h1{
-  font-size: 50px;
-  color: black;
+footer a {
+    text-decoration: none;
 }
