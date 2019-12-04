@@ -62,3 +62,12 @@ footer a {
     background-color: #C8C8C8;
     text-align: center;
 }
+
+#second_winkelwagen {
+  background: url(https://image.flaticon.com/icons/png/512/60/60992.png) no-repeat;
+  background-size: 25px;
+  padding-left: 30px;
+  margin-left: 56rem;
+  bottom: 12px;
+  position: absolute;
+}
