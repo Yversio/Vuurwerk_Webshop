@@ -18,8 +18,8 @@ footer a {
 
 .side_nav_producten {
   list-style-type: none;
-  margin-left: 105px;
-  width: 160px;
+  margin-left: 125px;
+  width: 200px;
   background-color: #f1f1f1;
 }
 
@@ -27,11 +27,12 @@ footer a {
   border: none;
   background-color: #f44336;
   color: white;
-  padding: 15px 32px;
+  padding: 17px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  width: 200px;
 }
 
 .side_nav_producten > li > button:hover {
@@ -42,22 +43,22 @@ footer a {
 .top_bar_producten {
   background-color: #f1f1f1;
   position: absolute;
-  margin-left: 30rem;
+  margin-left: 33rem;
 }
 
 #Producten > div {
   margin-top: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 #top_bar_text {
   margin-left: 50px;
-  margin-right: 57rem;
+  margin-right: 54rem;
 }
 
 #product_title_filter {
-    margin-left: 105px;
-    width: 160px;
+    margin-left: 125px;
+    width: 200px;
     text-decoration: none;
     background-color: #C8C8C8;
     text-align: center;
@@ -85,7 +86,7 @@ img {
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 30rem;
+  margin-left: 33rem;
   position: absolute;
   top: 65rem;
 }
@@ -99,7 +100,7 @@ img {
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 48rem;
+  margin-left: 50rem;
   position: absolute;
   top: 65rem;
 }
@@ -113,7 +114,7 @@ img {
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 66rem;
+  margin-left: 67rem;
   position: absolute;
   top: 65rem;
 }
