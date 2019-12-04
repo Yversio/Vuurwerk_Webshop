@@ -52,10 +52,10 @@ footer a {
 
 #top_bar_text {
   margin-left: 50px;
-  margin-right: 50rem;
+  margin-right: 57rem;
 }
 
-#product_title {
+#product_title_filter {
     margin-left: 105px;
     width: 160px;
     text-decoration: none;
@@ -70,4 +70,68 @@ footer a {
   margin-left: 56rem;
   bottom: 12px;
   position: absolute;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.beschrijving {
+  padding: 2px 16px;
+}
+
+.vuurwerk_product {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 30rem;
+  position: absolute;
+  top: 65rem;
+}
+
+.vuurwerk_product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.vuurwerk_product2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 48rem;
+  position: absolute;
+  top: 65rem;
+}
+
+.vuurwerk_product2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.vuurwerk_product3 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 66rem;
+  position: absolute;
+  top: 65rem;
+}
+
+.vuurwerk_product3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.vuurwerk_product4 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 84rem;
+  position: absolute;
+  top: 65rem;
+}
+
+.vuurwerk_product4:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
