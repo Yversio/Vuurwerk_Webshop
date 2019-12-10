@@ -1,21 +1,5 @@
 @charset "UTF-8";
 
-footer {
-    background-color: black;
-    height: auto;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-#copyright {
-    color: red;
-    font-size: 20px;
-}
-
 .side_nav_producten {
   list-style-type: none;
   margin-left: 8%;
@@ -47,7 +31,7 @@ footer a {
 }
 
 #Producten > div {
-  margin-top: 4%;
+  margin-top: 6%;
   margin-bottom: 6%;
 }
 
@@ -136,5 +120,60 @@ img {
 }
 
 .vuurwerk_product4:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.vuurwerk_product5 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 28%;
+  position: absolute;
+  top: 148%;
+}
+
+.vuurwerk_product5:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.vuurwerk_product6 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 45%;
+  position: absolute;
+  top: 148%;
+}
+
+.vuurwerk_product6:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.vuurwerk_product7 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 62%;
+  position: absolute;
+  top: 148%;
+}
+
+.vuurwerk_product7:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.vuurwerk_product8 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  border-radius: 5px;
+  margin-left: 79%;
+  position: absolute;
+  top: 148%;
+}
+
+.vuurwerk_product8:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
