@@ -2,7 +2,7 @@
 
 footer {
     background-color: black;
-    height: 50px;
+    height: auto;
     text-align: center;
     font-family: sans-serif;
 }
@@ -18,7 +18,7 @@ footer a {
 
 .side_nav_producten {
   list-style-type: none;
-  margin-left: 125px;
+  margin-left: 8%;
   width: 200px;
   background-color: #f1f1f1;
 }
@@ -43,21 +43,21 @@ footer a {
 .top_bar_producten {
   background-color: #f1f1f1;
   position: absolute;
-  margin-left: 33rem;
+  margin-left: 28%;
 }
 
 #Producten > div {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 4%;
+  margin-bottom: 6%;
 }
 
 #top_bar_text {
-  margin-left: 50px;
-  margin-right: 54rem;
+  margin-left: 5%;
+  margin-right: 51.5rem;
 }
 
 #product_title_filter {
-    margin-left: 125px;
+    margin-left: 8%;
     width: 200px;
     text-decoration: none;
     background-color: #C8C8C8;
@@ -68,7 +68,7 @@ footer a {
   background: url(https://image.flaticon.com/icons/png/512/60/60992.png) no-repeat;
   background-size: 25px;
   padding-left: 30px;
-  margin-left: 56rem;
+  margin-left: 53.5rem;
   bottom: 12px;
   position: absolute;
 }
@@ -81,14 +81,15 @@ img {
   padding: 2px 16px;
 }
 
+
 .vuurwerk_product {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 33rem;
+  margin-left: 28%;
   position: absolute;
-  top: 65rem;
+  top: 111%;
 }
 
 .vuurwerk_product:hover {
@@ -100,23 +101,24 @@ img {
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 50rem;
+  margin-left: 45%;
   position: absolute;
-  top: 65rem;
+  top: 111%;
 }
 
 .vuurwerk_product2:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+
 .vuurwerk_product3 {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 67rem;
+  margin-left: 62%;
   position: absolute;
-  top: 65rem;
+  top: 111%;
 }
 
 .vuurwerk_product3:hover {
@@ -128,9 +130,9 @@ img {
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 84rem;
+  margin-left: 79%;
   position: absolute;
-  top: 65rem;
+  top: 111%;
 }
 
 .vuurwerk_product4:hover {
