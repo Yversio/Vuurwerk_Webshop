@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-.side_nav_producten {
+#side_nav_producten {
   list-style-type: none;
   margin-left: 8%;
   width: 200px;
   background-color: #f1f1f1;
 }
 
-.side_nav_producten > li > button {
+#side_nav_producten > li > button {
   border: none;
   background-color: #f44336;
   color: white;
@@ -19,7 +19,7 @@
   width: 200px;
 }
 
-.side_nav_producten > li > button:hover {
+#side_nav_producten > li > button:hover {
   background-color: #555;
   color: white;
 }
@@ -27,17 +27,22 @@
 .top_bar_producten {
   background-color: #f1f1f1;
   position: absolute;
-  margin-left: 28%;
+  left: 28%;
 }
 
-#Producten > div {
-  margin-top: 6%;
+.product_header{
+  margin-top: 8%;
   margin-bottom: 6%;
 }
 
 #top_bar_text {
   margin-left: 5%;
-  margin-right: 51.5rem;
+  width: 100%;
+  margin-right: 50rem; /* REVIEW: Verander dit */
+}
+
+#Producten{
+  margin-top: 10%;
 }
 
 #product_title_filter {
@@ -52,7 +57,7 @@
   background: url(https://image.flaticon.com/icons/png/512/60/60992.png) no-repeat;
   background-size: 25px;
   padding-left: 30px;
-  margin-left: 53.5rem;
+  margin-left: 84%;
   bottom: 12px;
   position: absolute;
 }
@@ -65,115 +70,26 @@ img {
   padding: 2px 16px;
 }
 
-
 .vuurwerk_product {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 13%;
   border-radius: 5px;
-  margin-left: 28%;
-  position: absolute;
-  top: 111%;
 }
 
 .vuurwerk_product:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.vuurwerk_product2 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 13%;
-  border-radius: 5px;
-  margin-left: 45%;
-  position: absolute;
-  top: 111%;
+.filterDiv {
+  display: none;
 }
 
-.vuurwerk_product2:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.btnfilter.active{
+  background-color: #666 !important;
+  color: white;
 }
 
-
-.vuurwerk_product3 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 13%;
-  border-radius: 5px;
-  margin-left: 62%;
-  position: absolute;
-  top: 111%;
-}
-
-.vuurwerk_product3:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.vuurwerk_product4 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 13%;
-  border-radius: 5px;
-  margin-left: 79%;
-  position: absolute;
-  top: 111%;
-}
-
-.vuurwerk_product4:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.vuurwerk_product5 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 13%;
-  border-radius: 5px;
-  margin-left: 28%;
-  position: absolute;
-  top: 148%;
-}
-
-.vuurwerk_product5:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.vuurwerk_product6 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 13%;
-  border-radius: 5px;
-  margin-left: 45%;
-  position: absolute;
-  top: 148%;
-}
-
-.vuurwerk_product6:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.vuurwerk_product7 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 13%;
-  border-radius: 5px;
-  margin-left: 62%;
-  position: absolute;
-  top: 148%;
-}
-
-.vuurwerk_product7:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.vuurwerk_product8 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 13%;
-  border-radius: 5px;
-  margin-left: 79%;
-  position: absolute;
-  top: 148%;
-}
-
-.vuurwerk_product8:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.show{
+  display: block;
 }
