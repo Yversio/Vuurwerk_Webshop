@@ -33,7 +33,7 @@ Naam: Ricardo Mastenbroek
     <!--Hier komen al de scripts voor de pagina-->
     <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/filter.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 
 </head>
@@ -68,85 +68,138 @@ Naam: Ricardo Mastenbroek
       </div>
     </header>
 
-    <div id="Producten">
-      <div>
+      <div class="product_header">
         <div class="top_bar_producten"><h1 id="top_bar_text">Producten</h1>
           <a href="#" id="second_winkelwagen">Cart (<span id="aantal-items">0</span>)</a>
         </div>
         <div id="product_title_filter"><h1>Filter</h1></div>
-          <ul class="side_nav_producten">
-            <li><button>Alle Producten</button></li>
-            <li><button>Korting Producten</button></li>
-            <li><button>Knal Vuurwerk</button></li>
-            <li><button>Sier Vuurwerk</button></li>
-            <li><button>Kinder Vuurwerk</button></li>
+          <ul id="side_nav_producten">
+            <li><button class="btnfilter active" onclick="filterSelection('all')">Alle Producten</button></li>
+            <li><button class="btnfilter" onclick="filterSelection('Korting')">Korting Producten</button></li>
+            <li><button class="btnfilter" onclick="filterSelection('Knal')">Knal Vuurwerk</button></li>
+            <li><button class="btnfilter" onclick="filterSelection('Sier')">Sier Vuurwerk</button></li>
+            <li><button class="btnfilter" onclick="filterSelection('Kinder')">Kinder Vuurwerk</button></li>
           </ul>
         </div>
 
+    <div id="Producten">
+      <div class="filterDiv Knal">
         <div class="vuurwerk_product">
           <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-          <div class="beschrijving KNAL">
-            <h4><b>Vuurwerk voorbeeld</b></h4>
+          <div class="beschrijving">
+            <h4><b>Vuurwerk voorbeeld Knal</b></h4>
             <p>Test beschrijving vuurwerk</p>
           </div>
         </div>
-
-        <div class="vuurwerk_product2">
+      </div>
+      <div class="filterDiv Sier">
+        <div class="vuurwerk_product">
           <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-          <div class="beschrijving SIER">
-            <h4><b>Vuurwerk voorbeeld</b></h4>
+          <div class="beschrijving">
+            <h4><b>Vuurwerk voorbeeld Sier</b></h4>
             <p>Test beschrijving vuurwerk</p>
           </div>
         </div>
-
-      <div class="vuurwerk_product3">
+    </div>
+    <div class="filterDiv Kinder">
+      <div class="vuurwerk_product">
         <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving KNAL SIER">
-          <h4><b>Vuurwerk voorbeeld</b></h4>
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Kinder</b></h4>
           <p>Test beschrijving vuurwerk</p>
         </div>
       </div>
-
-      <div class="vuurwerk_product4">
+    </div>
+    <div class="filterDiv Korting">
+      <div class="vuurwerk_product">
         <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving KINDER">
-          <h4><b>Vuurwerk voorbeeld</b></h4>
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Korting</b></h4>
           <p>Test beschrijving vuurwerk</p>
         </div>
       </div>
-
-      <div class="vuurwerk_product5">
+    </div>
+    <div class="filterDiv Knal">
+      <div class="vuurwerk_product">
         <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving KINDER">
-          <h4><b>Vuurwerk voorbeeld</b></h4>
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Knal</b></h4>
           <p>Test beschrijving vuurwerk</p>
         </div>
       </div>
-
-      <div class="vuurwerk_product6">
+    </div>
+    <div class="filterDiv Knal">
+      <div class="vuurwerk_product">
         <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving KINDER">
-          <h4><b>Vuurwerk voorbeeld</b></h4>
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Knal</b></h4>
           <p>Test beschrijving vuurwerk</p>
         </div>
       </div>
-
-      <div class="vuurwerk_product7">
+    </div>
+    <div class="filterDiv Knal Sier">
+      <div class="vuurwerk_product">
         <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving KINDER">
-          <h4><b>Vuurwerk voorbeeld</b></h4>
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Sier</b></h4>
           <p>Test beschrijving vuurwerk</p>
         </div>
       </div>
-
-      <div class="vuurwerk_product8">
-        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving KINDER">
-          <h4><b>Vuurwerk voorbeeld</b></h4>
-          <p>Test beschrijving vuurwerk</p>
+    </div>
+      <div class="filterDiv Korting Sier">
+        <div class="vuurwerk_product">
+          <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+          <div class="beschrijving">
+            <h4><b>Vuurwerk voorbeeld Korting Sier</b></h4>
+            <p>Test beschrijving vuurwerk</p>
+          </div>
         </div>
       </div>
-</div>
+  </div>
 
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    classRemove(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) classAdd(x[i], "show");
+  }
+}
+
+function classAdd(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function classRemove(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("side_nav_producten");
+var btns = btnContainer.getElementsByClassName("btnfilter");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
 </body>
 </html>
