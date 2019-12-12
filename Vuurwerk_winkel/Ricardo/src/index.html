@@ -35,6 +35,7 @@ Naam: Ricardo Mastenbroek
     <link rel="stylesheet" href="styles/style.css" />
     <!-- <script src="scripts/filter.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -64,25 +65,16 @@ Naam: Ricardo Mastenbroek
       <div class="container showcase-inner">
         <h1>Team SkengGang</h1>
         <p>Welkom op onze vuurwerk pagina. Het is mogelijk om te scrollen naar beneden of de button hieronder drukken!</p>
-        <a href="#Producten" class="btn">Producten</a>
+        <a href="#product_grid" class="btn">Producten</a>
       </div>
     </header>
 
-      <div class="product_header">
-        <div class="top_bar_producten"><h1 id="top_bar_text">Producten</h1>
-          <a href="#" id="second_winkelwagen">Cart (<span id="aantal-items">0</span>)</a>
-        </div>
-        <div id="product_title_filter"><h1>Filter</h1></div>
-          <ul id="side_nav_producten">
-            <li><button class="btnfilter active" onclick="filterSelection('all')">Alle Producten</button></li>
-            <li><button class="btnfilter" onclick="filterSelection('Korting')">Korting Producten</button></li>
-            <li><button class="btnfilter" onclick="filterSelection('Knal')">Knal Vuurwerk</button></li>
-            <li><button class="btnfilter" onclick="filterSelection('Sier')">Sier Vuurwerk</button></li>
-            <li><button class="btnfilter" onclick="filterSelection('Kinder')">Kinder Vuurwerk</button></li>
-          </ul>
-        </div>
+  <div id="product_grid">
+    <div class="product_header">
+      <h1 id="product_title_header">Producten</h1>
+    </div>
 
-    <div id="Producten">
+    <div class="main_content">
       <div class="filterDiv Knal">
         <div class="vuurwerk_product">
           <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
@@ -92,70 +84,55 @@ Naam: Ricardo Mastenbroek
           </div>
         </div>
       </div>
-      <div class="filterDiv Sier">
+      <div class="filterDiv Knal">
         <div class="vuurwerk_product">
           <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
           <div class="beschrijving">
-            <h4><b>Vuurwerk voorbeeld Sier</b></h4>
-            <p>Test beschrijving vuurwerk</p>
-          </div>
-        </div>
-    </div>
-    <div class="filterDiv Kinder">
-      <div class="vuurwerk_product">
-        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving">
-          <h4><b>Vuurwerk voorbeeld Kinder</b></h4>
-          <p>Test beschrijving vuurwerk</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv Korting">
-      <div class="vuurwerk_product">
-        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving">
-          <h4><b>Vuurwerk voorbeeld Korting</b></h4>
-          <p>Test beschrijving vuurwerk</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv Knal">
-      <div class="vuurwerk_product">
-        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving">
-          <h4><b>Vuurwerk voorbeeld Knal</b></h4>
-          <p>Test beschrijving vuurwerk</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv Knal">
-      <div class="vuurwerk_product">
-        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving">
-          <h4><b>Vuurwerk voorbeeld Knal</b></h4>
-          <p>Test beschrijving vuurwerk</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv Knal Sier">
-      <div class="vuurwerk_product">
-        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-        <div class="beschrijving">
-          <h4><b>Vuurwerk voorbeeld Sier</b></h4>
-          <p>Test beschrijving vuurwerk</p>
-        </div>
-      </div>
-    </div>
-      <div class="filterDiv Korting Sier">
-        <div class="vuurwerk_product">
-          <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-          <div class="beschrijving">
-            <h4><b>Vuurwerk voorbeeld Korting Sier</b></h4>
+            <h4><b>Vuurwerk voorbeeld Knal</b></h4>
             <p>Test beschrijving vuurwerk</p>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="product_sidebar">
+      <div class="dropdown">
+        <button onclick="myFunction()" id="product_title_filter" class="dropbtn">Filter
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+        <ul id="side_nav_producten">
+          <li><button class="btnfilter active" onclick="filterSelection('all')">Alle Producten</button></li>
+          <li><button class="btnfilter" onclick="filterSelection('Korting')">Korting Producten</button></li>
+          <li><button class="btnfilter" onclick="filterSelection('Knal')">Knal Vuurwerk</button></li>
+          <li><button class="btnfilter" onclick="filterSelection('Sier')">Sier Vuurwerk</button></li>
+          <li><button class="btnfilter" onclick="filterSelection('Kinder')">Kinder Vuurwerk</button></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+      <footer>Footer</footer>
   </div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle('show');
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("myDropdown");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 <script>
 filterSelection("all")
@@ -168,7 +145,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) classAdd(x[i], "show");
   }
 }
-
 function classAdd(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -177,7 +153,6 @@ function classAdd(element, name) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
 }
-
 function classRemove(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -189,7 +164,6 @@ function classRemove(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
 var btnContainer = document.getElementById("side_nav_producten");
 var btns = btnContainer.getElementsByClassName("btnfilter");
 for (var i = 0; i < btns.length; i++) {
@@ -199,7 +173,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
 </script>
 </body>
 </html>
