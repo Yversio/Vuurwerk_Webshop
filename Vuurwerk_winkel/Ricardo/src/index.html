@@ -75,24 +75,90 @@ Naam: Ricardo Mastenbroek
     </div>
 
     <div class="main_content">
-      <div class="filterDiv Knal">
-        <div class="vuurwerk_product">
+        <div class="vuurwerk_product Sier">
+          <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+          <div class="beschrijving">
+            <h4><b>Vuurwerk voorbeeld Sier</b></h4>
+            <p>Test beschrijving vuurwerk</p>
+          </div>
+        </div>
+        <div class="vuurwerk_product Knal">
           <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
           <div class="beschrijving">
             <h4><b>Vuurwerk voorbeeld Knal</b></h4>
             <p>Test beschrijving vuurwerk</p>
-          </div>
         </div>
       </div>
-      <div class="filterDiv Knal">
-        <div class="vuurwerk_product">
-          <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
-          <div class="beschrijving">
-            <h4><b>Vuurwerk voorbeeld Knal</b></h4>
-            <p>Test beschrijving vuurwerk</p>
-          </div>
+      <div class="vuurwerk_product Korting">
+        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Korting</b></h4>
+          <p>Test beschrijving vuurwerk</p>
         </div>
       </div>
+      <div class="vuurwerk_product Kinder">
+        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Kinder</b></h4>
+          <p>Test beschrijving vuurwerk</p>
+        </div>
+      </div>
+      <div class="vuurwerk_product Knal Kinder">
+        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Knal Kinder</b></h4>
+          <p>Test beschrijving vuurwerk</p>
+        </div>
+      </div>
+      <div class="vuurwerk_product Sier Korting">
+        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Sier Korting</b></h4>
+          <p>Test beschrijving vuurwerk</p>
+        </div>
+      </div>
+      <div class="vuurwerk_product Sier Korting">
+        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Sier Korting</b></h4>
+          <p>Test beschrijving vuurwerk</p>
+        </div>
+      </div>
+      <div class="vuurwerk_product Sier Korting">
+        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Sier Korting</b></h4>
+          <p>Test beschrijving vuurwerk</p>
+        </div>
+      </div>
+      <div class="vuurwerk_product Knal">
+        <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+        <div class="beschrijving">
+          <h4><b>Vuurwerk voorbeeld Knal</b></h4>
+          <p>Test beschrijving vuurwerk</p>
+      </div>
+    </div>
+    <div class="vuurwerk_product Korting">
+      <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+      <div class="beschrijving">
+        <h4><b>Vuurwerk voorbeeld Korting</b></h4>
+        <p>Test beschrijving vuurwerk</p>
+      </div>
+    </div>
+    <div class="vuurwerk_product Kinder">
+      <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+      <div class="beschrijving">
+        <h4><b>Vuurwerk voorbeeld Kinder</b></h4>
+        <p>Test beschrijving vuurwerk</p>
+      </div>
+    </div>
+    <div class="vuurwerk_product Knal Kinder">
+      <img src="https://cdn-04.dagelijksestandaard.nl/wp-content/uploads/2019/11/image1.jpeg?x39923" alt="FotoFP3" style="width:100%;">
+      <div class="beschrijving">
+        <h4><b>Vuurwerk voorbeeld Knal Kinder</b></h4>
+        <p>Test beschrijving vuurwerk</p>
+      </div>
+    </div>
     </div>
 
     <div class="product_sidebar">
@@ -117,7 +183,7 @@ Naam: Ricardo Mastenbroek
 
 <script>
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle('show');
+  document.getElementById("myDropdown").classList.toggle('showing');
 }
 
 window.onclick = function(event) {
@@ -126,8 +192,8 @@ window.onclick = function(event) {
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      if (openDropdown.classList.contains('showing')) {
+        openDropdown.classList.remove('showing');
       }
     }
   }
@@ -138,7 +204,7 @@ window.onclick = function(event) {
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("filterDiv");
+  x = document.getElementsByClassName("vuurwerk_product");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     classRemove(x[i], "show");
