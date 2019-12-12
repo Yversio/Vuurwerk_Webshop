@@ -1,18 +1,20 @@
 .product_header {
   margin-top: 5%;
-  width: 70%;
+  width: 50%;
   grid-area: product_header;
-  background-color: #fed330;
+  background-color: #3498db;
   padding: 20px;
-  margin-left: 21%;
+  margin-left: 27%;
 }
 
 .main_content {
   grid-area: content;
-  background-color: #20bf6b;
   padding: 20px;
-  padding-bottom: 16.5%;
-  width: 88.5%;
+  margin-right: 15%;
+  margin-left: 5%;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 .product_sidebar {
@@ -77,7 +79,7 @@ footer {
 }
 
 .fa {
-  margin-left: 5%;
+  margin-left: 2%;
   color: black;
 }
 
@@ -93,15 +95,18 @@ img {
 
 .beschrijving {
   padding: 2px 16px;
+  width: 10%;
 }
 
 .vuurwerk_product {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: white;
-  width: 13%;
+  width: 20%;
   border-radius: 5px;
   display: none;
+  margin-left: 1%;
+  margin-top: 2%;
 }
 
 .vuurwerk_product:hover {
@@ -113,6 +118,5 @@ img {
   color: white;
 }
 
-.filterDiv {padding: 2%;}
-
-.show {display: block;}
+.showing {display: block;}
+.show{display: block;}
