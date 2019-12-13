@@ -12,3 +12,8 @@ CREATE TABLE `producten` (
 );
 
 INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (1, 'Dumbum Single Shot',12.99,'Knal',"https://i.ytimg.com/vi/r3PyVHvOT7k/maxresdefault.jpg");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (2, 'Rias Grimoire', 159.99, 'Sier', "http://vignette.wikia.nocookie.net/highschooldxd/images/4/42/Rias_render_Hero.png");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (3, '', 15,99, 'Sier', ""); /*Change this*/
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (4, '', 15,99, 'Sier', ""); /*Change this*//*Change this*//*Change this*/
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (5, '', 15,99, 'Sier', ""); /*Change this*//*Change this*/
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (6, '', 15,99, 'Sier', ""); /*Change this*/
