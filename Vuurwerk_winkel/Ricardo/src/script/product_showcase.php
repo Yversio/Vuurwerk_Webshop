@@ -17,20 +17,38 @@ function CreateDatabase($servernaam, $gebruikersnaam, $password, $dbnaam){
 
 $conn = new PDO("mysql:host=$servernaam;dbname=$dbnaam", $gebruikersnaam, $password);
 $sqlknal = "SELECT * FROM `producten` WHERE pr_categorie = 'Knal'";
-$result = $conn->query($sqlknal);
+$resultknal = $conn->query($sqlknal);
 
-function ShowProducten($sqlknal, $result){
-  while($row = $result->fetch()){
+function ShowProductenKnal($sqlknal, $resultknal){
+  while($row = $resultknal->fetch()){
     echo "<div class='vuurwerk_product Knal'>";
     echo "<img src=" .$row['pr_url_afbeelding'] ." alt='Knal Product' style='width:100%;'>";
     echo "<div class='beschrijving'";
     echo "<h4><b>" .$row['pr_naam'] ."</b></h4>";
     echo "<p>Dit is een knal product</p>";
+    echo "<button>Add to cart</button>";
+    echo "</div>";
+    echo "</div>";
+  }
+}
+
+$sqlsier = "SELECT * FROM `producten` WHERE pr_categorie = 'Sier'";
+$resultsier = $conn->query($sqlsier);
+
+function ShowProductenSier($sqlsier, $resultsier){
+  while($row = $resultsier->fetch()){
+    echo "<div class='vuurwerk_product Sier'>";
+    echo "<img src=" .$row['pr_url_afbeelding'] ." alt='Sier Product' style='width:100%;'>";
+    echo "<div class='beschrijving'";
+    echo "<h4><b>" .$row['pr_naam'] ."</b></h4>";
+    echo "<p>Dit is een sier product</p>";
+    echo "<button>Add to cart</button>";
     echo "</div>";
     echo "</div>";
   }
 }
 
 CreateDatabase($servernaam, $gebruikersnaam, $password, $dbnaam);
-ShowProducten($sqlknal, $result)
+ShowProductenKnal($sqlknal, $resultknal);
+ShowProductenSier($sqlsier, $resultsier);
 ?>
