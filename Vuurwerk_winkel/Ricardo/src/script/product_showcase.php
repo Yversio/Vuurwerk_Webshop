@@ -23,7 +23,7 @@ function ShowProductenKnal($sqlknal, $resultknal){
   while($row = $resultknal->fetch()){
     echo "<div class='vuurwerk_product Knal'>";
     echo "<img src=" .$row['pr_url_afbeelding'] ." alt='Knal Product' style='width:100%;'>";
-    echo "<div class='beschrijving'";
+    echo "<div class='beschrijving'>";
     echo "<h4><b>" .$row['pr_naam'] ."</b></h4>";
     echo "<p>Dit is een knal product</p>";
     echo "<button>Add to cart</button>";
@@ -39,10 +39,10 @@ function ShowProductenSier($sqlsier, $resultsier){
   while($row = $resultsier->fetch()){
     echo "<div class='vuurwerk_product Sier'>";
     echo "<img src=" .$row['pr_url_afbeelding'] ." alt='Sier Product' style='width:100%;'>";
-    echo "<div class='beschrijving'";
+    echo "<div class='beschrijving'>";
     echo "<h4><b>" .$row['pr_naam'] ."</b></h4>";
     echo "<p>Dit is een sier product</p>";
-    echo "<button>Add to cart</button>";
+    echo "<button class='addcart_btn'>Add to cart</button>";
     echo "</div>";
     echo "</div>";
   }
