@@ -5,7 +5,7 @@ $gebruikersnaam = "root";
 $password = "";
 $dbnaam = "vuurwerk_webshop";
 
-function CreateDatabase($servernaam, $gebruikersnaam, $password, $dbnaam){
+function ConnectDatabase($servernaam, $gebruikersnaam, $password, $dbnaam){
   try {
   $conn = new PDO("mysql:host=$servernaam;dbname=$dbnaam", $gebruikersnaam, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -48,7 +48,7 @@ function ShowProductenSier($sqlsier, $resultsier){
   }
 }
 
-CreateDatabase($servernaam, $gebruikersnaam, $password, $dbnaam);
+ConnectDatabase($servernaam, $gebruikersnaam, $password, $dbnaam);
 ShowProductenKnal($sqlknal, $resultknal);
 ShowProductenSier($sqlsier, $resultsier);
 ?>
