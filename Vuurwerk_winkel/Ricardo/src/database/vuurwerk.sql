@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS `producten`;
 CREATE TABLE `producten` (
     `pr_pk_id` INT PRIMARY KEY,
     `pr_naam` VARCHAR(50) NOT NULL,
+    `pr_aantal` INT NOT NULL,
     `pr_prijs` DOUBLE(5,2) NOT NULL,
     `pr_categorie` VARCHAR(20) NOT NULL,
     `pr_url_afbeelding` VARCHAR(100) NOT NULL
