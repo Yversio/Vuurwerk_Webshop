@@ -12,9 +12,19 @@ CREATE TABLE `producten` (
     `pr_url_afbeelding` VARCHAR(100) NOT NULL
 );
 
-INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (1, 'Dumbum Single Shot',12.99,'Knal',"https://i.ytimg.com/vi/r3PyVHvOT7k/maxresdefault.jpg");
-INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (2, 'Rias Grimoire', 159.99, 'Sier', "http://vignette.wikia.nocookie.net/highschooldxd/images/4/42/Rias_render_Hero.png");
-INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (3, '', 15,99, 'Sier', ""); /*Change this*/
-INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (4, '', 15,99, 'Sier', ""); /*Change this*//*Change this*//*Change this*/
-INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (5, '', 15,99, 'Sier', ""); /*Change this*//*Change this*/
-INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (6, '', 15,99, 'Sier', ""); /*Change this*/
+-- Knal Vuurwerk
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (1, 'Dumbum Single Shot', 100, 12.99,'Knal',"https://i.ytimg.com/vi/r3PyVHvOT7k/maxresdefault.jpg");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (2, '', 250, 159.99, 'Knal', "");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (3, '', 250, 7.99, 'Knal', "");
+-- Sier Vuurwerk
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (4, '', 50, 15.99, 'Sier', "");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (5, '', 75, 15.99, 'Sier', "");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (6, '', 200, 15.99, 'Sier', "");
+-- Korting Vuurwerk
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (7, '', 55, 15.99, 'Korting', "");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (8, '', 50, 15.99, 'Korting', "");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (9, '', 175, 15.99, 'Korting', "");
+-- Kinder Vuurwerk
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (10, '', 100, 3.99, 'Kinder', "");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (11, '', 285, 1.50, 'Kinder', "");
+INSERT INTO `producten`(`pr_pk_id`, `pr_naam`, `pr_prijs`, `pr_categorie`, `pr_url_afbeelding`) VALUES (12, '', 305, 10.00, 'Kinder', ""); 
