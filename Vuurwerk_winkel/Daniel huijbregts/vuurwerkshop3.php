@@ -20,7 +20,7 @@
 
 
 
-// Auteur: Voornaam Achternaam klas
+// Auteur: Daniel Huijbregts Klas 1g
 try {
 	
 // initialisatie
